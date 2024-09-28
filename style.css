@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+body {
+    overflow: visible;
+}
+.navbar {
+    position: relative;
+    z-index: 10;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(108, 123, 123);
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+#watermark {
+    margin-left: 8px;
+}
+#check {
+    display: none;
+}
+.icon {
+    color: white;
+    font-size: 20px;
+}
+label i {
+    transition: transform .5s ease-out;
+}
+#check:checked ~ label i {
+    transform: rotate(-90deg);
+}
+.navbar:has(#check:checked) ~ nav {
+    margin-top: 0vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgb(108, 123, 123);
+    height: 88vh;
+    padding: 600px 100px 80px 100px;
+    margin-top: -100vh;
+    transition: margin-top 1s ease-in-out;
+}
+.nav-link a {
+    text-decoration: none;
+    letter-spacing: 2;
+    color: white;
+}
+.main-link {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 50%;
+}
+.main-link a {
+    font-size: 80px;
+}
+.main-link a:hover {
+    color: white;
+}
+.main-link:has(a:hover) > a:not(:hover) {
+    color: lightgrey;
+}
+body:has(#check:checked) {
+    overflow: hidden;
+}
+.sub-link {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.sub-link a {
+    font-size: 20px;
+    margin-top: 10px;
+    color: lightgrey;
+}
+.sub-link a:hover {
+    color: white;
+}
