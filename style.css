@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .navbar {
     position: relative;
     z-index: 10;
@@ -67,7 +70,7 @@ nav {
 .main-link a:hover {
     color: white;
 }
-.main-link:has(a:hover) > a:not(:hover) {
+.main-link:has(a:hover) a:not(:hover) {
     color: lightgrey;
 }
 .sub-link {
