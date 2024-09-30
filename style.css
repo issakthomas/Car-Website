@@ -105,10 +105,6 @@ nav {
     object-fit: cover;
     float: left;
 }
-.slides p {
-    position: relative;
-    top: -50px;
-}
 @keyframes slide {
     0% {
         left: 0%;
@@ -192,6 +188,7 @@ nav {
 }
 #history {
     display: flex;
+    justify-content: space-between;
     padding: 100px 100px;
     width: 100%;
 }
@@ -203,6 +200,36 @@ nav {
 }
 .hist-item-four img {
     margin-left: 150px;
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+    width: 100%;
+}
+.abt-item-one {
+    width: 45%;
+    text-align: right;
+}
+#spcl2 {
+    margin-right: 50px;
+}
+.abt-item-three {
+    margin: 150px 0px;
+}
+#abt-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 10px 10px 20px;
+    outline: 1px solid rgb(108, 123, 123);
+    color: invert;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    float: right;
 }
 footer {
     display: flex;
