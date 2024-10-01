@@ -284,7 +284,7 @@ footer {
     margin: 15px 0px;
 }
 
-@media (max-width:760px) {
+/* @media (max-width:760px) {
     .navbar {
         height: 10vh;
         padding: 0px 25px;
@@ -391,8 +391,8 @@ footer {
     .flink {
         justify-content: space-between;
     }
-}
-@media (max-width:480px) {
+} */
+@media (max-width:760px) {
     nav {
         height: 60vh;
         padding: 600px 30px 40px 30px;
