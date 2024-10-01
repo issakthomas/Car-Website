@@ -159,6 +159,9 @@ nav {
     background-color: black;
     color: white;
 }
+#technology a {
+    color: white;
+}
 .item-one p {
     font-size: 15px;
     line-height: 1;
@@ -187,6 +190,10 @@ nav {
     border: 0;
     margin-top: 20px;
     cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 #button i {
     font-size: 20px;
@@ -398,7 +405,7 @@ footer {
         padding: 600px 30px 40px 30px;
     }
     .navbar:has(#check:checked) ~ nav {
-        margin-top: -40vh;
+        margin-top: -30vh;
     }
     .main-link a {
         font-size: 40px;
@@ -476,6 +483,7 @@ footer {
         margin: 50px 0px;
     }
     .abt-item-four p {
+        text-align: left;
         font-size: 10px;
     }
     #abt-button {
