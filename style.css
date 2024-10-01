@@ -231,11 +231,48 @@ nav {
     cursor: pointer;
     float: right;
 }
+
+hr {
+    width: 80%;
+    margin: auto;
+    border: .5px solid rgb(108, 123, 123);
+}
 footer {
     display: flex;
-    justify-content: center;
-    background-color: yellow;
-    padding: 10px 0px;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+.show p {
+    font-size: 80px;
+    line-height: 1;
+}
+.flink {
+    display: flex;
+}
+.flink-section {
+    margin-left: 80px;
+}
+.flink-section a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+.flink-section a:hover {
+    color: rgb(108, 123, 123);
+}
+.flink-one {
+    font-size: 25px;
+}
+.flink-two {
+    font-size: 15px;
+}
+.cpy {
+    text-align: center;
+}
+.cpy p {
+    font-size: 12px;
+    margin: 15px 0px;
 }
 
 @media (max-width:760px) {
@@ -323,5 +360,25 @@ footer {
     }
     #spcl2 {
         margin-right: 0px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 50px 120px;
+    }
+    .show {
+        width: fit-content;
+        margin: 0 auto 50px auto ;
+    }
+    #spcl {
+        text-align: right;
+    }
+    .show p {
+        font-size: 60px;
+    }
+    .flink-section {
+        margin-left: 0px;
+    }
+    .flink {
+        justify-content: space-between;
     }
 }
